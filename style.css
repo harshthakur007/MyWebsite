@@ -21,7 +21,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0% 40px;
+    padding: 0 40px;
     padding-top: 50px;
 }
 
@@ -72,7 +72,7 @@ body {
     color: #000;
 }
 
-#main>h1 {
+#main > h1 {
     color: rgb(0, 0, 0);
     position: absolute;
     font-size: 185px;
@@ -99,15 +99,15 @@ img {
 }
 
 #img1 {
-    transform: translate(-50%, -50%)rotate(-30deg);
+    transform: translate(-50%, -50%) rotate(-30deg);
 }
 
 #img2 {
-    transform: translate(-50%, -50%)rotate(-20deg);
+    transform: translate(-50%, -50%) rotate(-20deg);
 }
 
 #img3 {
-    transform: translate(-50%, -50%)rotate(-10deg);
+    transform: translate(-50%, -50%) rotate(-10deg);
 }
 
 #bottom-text {
@@ -116,4 +116,92 @@ img {
     left: 32px;
     font-size: 16px;
     font-weight: 400;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+    #main > h1 {
+        font-size: 150px;
+    }
+    
+    img {
+        height: 350px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    #nav {
+        padding: 0 20px;
+        padding-top: 30px;
+    }
+
+    #main > h1 {
+        font-size: 120px;
+    }
+    
+    img {
+        height: 300px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    #nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #nav-part2 h3 {
+        font-size: 24px;
+    }
+
+    #main > h1 {
+        font-size: 100px;
+    }
+    
+    img {
+        height: 250px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    #nav-part1 h2, #nav-part1 i, #nav button {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
+    #main > h1 {
+        font-size: 80px;
+    }
+    
+    img {
+        height: 200px;
+        width: 100px;
+    }
+
+    #bottom-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    #nav-part2 h3 {
+        font-size: 20px;
+    }
+
+    #main > h1 {
+        font-size: 60px;
+    }
+
+    img {
+        height: 150px;
+        width: 100px;
+    }
+    
+    #bottom-text {
+        font-size: 12px;
+    }
 }
